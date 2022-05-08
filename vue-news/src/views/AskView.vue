@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div v-for="item in ask">{{item.title}}</div>
+    <div v-for="item in ask">{{ item.title }}</div>
   </div>
 </template>
 
 <script>
-import { fetchAskList } from '../api/index'
+import {fetchAskList} from '../api/index'
 
 export default {
   data() {

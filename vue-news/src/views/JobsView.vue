@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div v-for="item in jobs">{{item.title}}</div>
+    <div v-for="item in jobs">{{ item.title }}</div>
   </div>
 </template>
 
 <script>
-import { fetchJobsList } from '../api/index'
+import {fetchJobsList} from '../api/index'
 
 export default {
   data() {
