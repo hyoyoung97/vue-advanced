@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import {fetchJobsList} from '../api/index'
-
 export default {
   data() {
     return {
@@ -14,14 +12,7 @@ export default {
     }
   },
   created() {
-    var vm = this;
-    fetchJobsList()
-        .then(function (response) {
-          vm.jobs = response.data;
-        })
-        .catch(function (error) {
-          console.log(error);
-        })
+    this.$store.dispatch('FETCH_JOBS');
   }
 }
 </script>

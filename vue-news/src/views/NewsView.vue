@@ -5,8 +5,6 @@
 </template>
 
 <script>
-import {fetchNewsList} from '../api/index'
-
 export default {
   name: 'NewsView',
   data() {
