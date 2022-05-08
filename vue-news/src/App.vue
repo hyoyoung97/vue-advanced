@@ -8,7 +8,6 @@
 <script>
 import ToolBar from './components/ToolBar'
 
-
 export default {
   methods: {
   },
